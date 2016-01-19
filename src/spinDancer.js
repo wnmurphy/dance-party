@@ -10,4 +10,4 @@ SpinDancer.prototype.constructor = SpinDancer;
 SpinDancer.prototype.step = function(timeBetweenSteps){
   Dancer.prototype.step.call(this, 20);
   this.$node.css('transform', 'rotate(' + (this.rotation += 20) + 'deg)');
-}; 
+};
