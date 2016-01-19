@@ -39,5 +39,8 @@ body, a:link, a:visited, a:active{
 
 .secretDancer{
   position:absolute;
-  transform: scale(.25);
+}
+
+.secret{
+  display: none;
 }

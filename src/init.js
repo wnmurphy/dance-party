@@ -38,4 +38,10 @@ $(document).ready(function(){
       dancer.setPosition(top, 0);
     }
   });
+
+  $(document).keydown(function(event){
+    if(event.which === 84){
+      $(".secret").click();
+    }
+  });
 });
