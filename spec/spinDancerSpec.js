@@ -14,7 +14,6 @@ describe("spinDancer", function() {
   });
 
   it("should have a step function that makes its node rotate", function() {
-    sinon.spy(spinDancer.$node, 'toggle');
     spinDancer.step();
     expect(spinDancer.$node.css('transform')).to.be.equal('rotate(20deg)');
   });
