@@ -5,19 +5,33 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  font-family: 'Gloria Hallelujah', cursive; 
   background-image: url("http://tinyurl.com/j6wzqb5");  
 
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  color: #FBE287;
+  text-decoration: none;
 }
 .title, .actionButton{
   padding:5px 12px;
   float:right;
 }
+.tagline{
+  float:right;
+  position: relative;
+}
+.button{
+  float: left;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 0px 10px 0px 10px;
+  background-color: #355329;
+}
 .topbar{
-  height:32px;
+  height:45px;
   background-color: #555;
+  z-index: 10;
 }
 .title{
   background-color: #777;
@@ -26,21 +40,41 @@ body, a:link, a:visited, a:active{
   border:40px solid red;
   border-radius:10px;
   position:absolute;
+  z-index: -1;
 }
 .fadeDancer{
   border:40px solid green;
   position:absolute;
+  z-index: -1;
 }
 .spinDancer{
   border:40px solid orange;
   border-radius: 80px 0px 80px 0px;
   position:absolute;
+  z-index: -1;
 }
 
 .secretDancer{
   position:absolute;
+  z-index: 1;
 }
 
 .secret{
   display: none;
+}
+
+.bombDancer{
+  border-radius:10px;
+  position:absolute;
+  z-index: -1;
+  transform: scale(.40);
+}
+
+iframe{
+  position: fixed;
+  top: 50%;
+  left: 50%;  
+  margin-top: -315px;
+  margin-left: -420px;
+  z-index: -1;
 }

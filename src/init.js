@@ -44,4 +44,15 @@ $(document).ready(function(){
       $(".secret").click();
     }
   });
+
+  $(document).on("click", "span", function(){
+    var $span = $(this);
+    $(document).mousemove(function(event){
+      $span.css({ top: event.pageY + 3, left: event.pageX + 3 });
+    });
+    $(document).on('keydown', function(keyEvent) {
+      if (keyEvent.which === 27) { $(document).off('mousemove'); }
+    });
+  });  
+
 });

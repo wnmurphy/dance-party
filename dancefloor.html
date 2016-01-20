@@ -4,6 +4,7 @@
     <title>Object Dance Party</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="lib/jquery-ui.css" />
+    <link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
     <script src="lib/jquery.js"></script>
     <script src="lib/jquery-ui.js"></script>
     <script src="src/dancer.js"></script>
@@ -11,19 +12,36 @@
     <script src="src/FadeDancer.js"></script>
     <script src="src/spinDancer.js"></script>
     <script src="src/secretDancer.js"></script>
+    <script src="src/bombDancer.js"></script>
   </head>
   <body>
     <div class="topbar">
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">add a blinky dancer</a> 
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="FadeDancer">add a fadey dancer</a> 
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="SpinDancer">add a spinny dancer</a> 
-      <a href="#" class="addDancerButton secret" data-dancer-maker-function-name="SecretDancer">add a secret dancer</a> 
-      <a href="#" id="lineUpButton">Line 'em all up!</a>   
+      
+        <a href="#" class="addDancerButton secret" data-dancer-maker-function-name="SecretDancer">secret dancer</a>
+
+      <div class="button">
+        <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">blinky dancer</a>
+      </div>
+
+      <div class="button">
+        <a href="#" class="addDancerButton" data-dancer-maker-function-name="FadeDancer">fadey dancer</a> 
+      </div>
+
+      <div class="button">
+        <a href="#" class="addDancerButton" data-dancer-maker-function-name="SpinDancer">spinny dancer</a> 
+      </div>
+
+      <div class="button">
+        <a href="#" class="addDancerButton" data-dancer-maker-function-name="BombDancer">bomb dancer</a> 
+      </div>
+
+      <div class="button">
+        <a href="#" id="lineUpButton">Line 'em all up!</a>   
+      </div>
+
     </div>
+    <iframe width="840" height="630" src="https://www.youtube.com/embed/rmqGBLsDuoQ?t=39s&autoplay=1&start=39&modestbranding=1" frameborder="0" allowfullscreen></iframe></script>
     <script src="src/init.js"></script>
   </body>
 </html>
-
-
-<!--<iframe width="420" height="315" src="https://youtu.be/rmqGBLsDuoQ?t=40s" frameborder="0" allowfullscreen></iframe>-->

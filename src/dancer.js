@@ -2,10 +2,10 @@
 var Dancer = function(top, left, timeBetweenSteps) {
   // use jQuery to create an HTML <span> tag
   this.$node = $('<span class="dancer"></span>');
+  this.setPosition(top, left);
   this.step(timeBetweenSteps);
   // now that we have defined the dancer object, we can start setting up important parts of it by calling the methods we wrote
   // this one sets the position to some random default point within the body
-  this.setPosition(top, left);
 };
 
 Dancer.prototype.step = function(timeBetweenSteps) {
@@ -22,5 +22,10 @@ Dancer.prototype.setPosition = function(top, left) {
     top: top,
     left: left
   };
-  this.$node.css(styleSettings);
+  this.$node.offset(styleSettings);
+};
+
+Dancer.prototype.blowUp = function() {
+  $(this.$node).effect('explode');
+  $(this.$node).remove();
 };
